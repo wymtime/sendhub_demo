@@ -41,6 +41,8 @@ gem 'httparty'
 
 gem 'figaro'
 
+gem 'newrelic_rpm'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'

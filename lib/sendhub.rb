@@ -88,7 +88,7 @@ class SendHub
   end
   
   def update_contacts_url(options)
-    "#{base_url}contacts/#{options[:id]}/#{credentials}"
+    "#{base_url}contacts/#{options[:id].to_s}/#{credentials}"
   end
   
   def messages_url()
@@ -101,7 +101,6 @@ class SendHub
 
 	def group_contacts_url(options)
     "#{base_url}groups/#{options[:id]}/contacts/#{credentials}"
-		#base_url + "groups/" + options[:id].to_s + "/contacts" + credentials
 	end
 
 	def send_request(request_type, url, json)

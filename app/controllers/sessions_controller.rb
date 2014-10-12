@@ -7,10 +7,7 @@ class SessionsController < ApplicationController
       sign_in!(@user)
       
       redirect_to root_url
-      #render json: @user, status: 200
     else
-      #flash.now[:errors] = ["Invalid username/password"]
-      #render :new, status: 401
       render json: "wrong username/password", status: 200
     end
   end

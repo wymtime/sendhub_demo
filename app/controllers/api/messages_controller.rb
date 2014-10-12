@@ -9,16 +9,6 @@ module Api
       else
         render json: @message
       end
-      
-      # @message = Message.new(message_params)
-      #
-      # @message.user_id = current_user.id
-      #
-      # if @message.save
-      #   render json: @message
-      # else
-      #   render json: @message.errors.full_messages, status: :unprocessable_entity
-      # end
     end
     
     private
