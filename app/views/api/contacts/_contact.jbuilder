@@ -1,0 +1,1 @@
+json.extract! contact, :name, :phone_number, :id_str
